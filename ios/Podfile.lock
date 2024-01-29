@@ -1,14 +1,14 @@
 PODS:
   - Flutter (1.0.0)
-  - flutter_insider (3.8.0):
+  - flutter_insider (3.9.3):
     - Flutter
-    - InsiderGeofence (= 1.0.3)
+    - InsiderGeofence (= 1.1.0)
     - InsiderHybrid (= 1.4.0)
-    - InsiderMobile (= 13.1.0)
-  - InsiderGeofence (1.0.3):
+    - InsiderMobile (= 13.3.3)
+  - InsiderGeofence (1.1.0):
     - InsiderMobile (>= 12.7.5)
   - InsiderHybrid (1.4.0)
-  - InsiderMobile (13.1.0)
+  - InsiderMobile (13.3.3)
   - InsiderMobileAdvancedNotification (1.2.2)
 
 DEPENDENCIES:
@@ -31,13 +31,13 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/flutter_insider/ios"
 
 SPEC CHECKSUMS:
-  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
-  flutter_insider: fa29cb66ee663c0cf55248655383df8c8bb3ed1f
-  InsiderGeofence: 590a1c1f9b3b5d6bba3d712bddfb7a1fb8d07442
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  flutter_insider: 894b30516fd3ed562650a9a1cc497ac29d46d09c
+  InsiderGeofence: ebe670862ecb148b2c69cee6f8bbbbe37050c1ae
   InsiderHybrid: c03a8ed67b7d8c1deb2dadaa5655d86d6ab3dc33
-  InsiderMobile: 5dcd91313bc2e5ed890ea7de23d1773f32d3be06
+  InsiderMobile: 48befbf95079608ac5e57960ad0e89ec746f6867
   InsiderMobileAdvancedNotification: 5f6721f0a6a6548f711cef29e0b264e96492c961
 
-PODFILE CHECKSUM: d0495b3b35adf03fe1430db4e524ae0b184b508d
+PODFILE CHECKSUM: 98a97bbf23d0e05da086ad8b32663ee5343dc6cb
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.14.2
