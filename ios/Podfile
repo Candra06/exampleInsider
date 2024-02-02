@@ -30,8 +30,20 @@ flutter_ios_podfile_setup
 target 'Runner' do
   use_frameworks!
   use_modular_headers!
-  pod 'InsiderMobile'
+  
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
+  post_install do |installer|
+    installer.pods_project.targets.each do |target|
+      insider_targets = ["InsiderMobile", "InsiderGeofence", "InsiderMobileAdvancedNotification", "InsiderHybrid"]
+      if insider_targets.include?(target.name)
+        target.build_configurations.each do |config|
+          config.build_settings["ONLY_ACTIVE_ARCH"] = "YES"
+        end
+      end
+      flutter_additional_ios_build_settings(target)
+    end
+  end
+  
 end
 target 'InsiderNotificationContent' do
   inherit! :search_paths
@@ -42,9 +54,4 @@ target 'InsiderNotificationService' do
   inherit! :search_paths
     # Pods for InsiderNotificationService
   pod "InsiderMobileAdvancedNotification"
-end
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    flutter_additional_ios_build_settings(target)
-  end
 end
